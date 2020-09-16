@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="154" id="KGk-i7-Jjw" customClass="CustomTableViewCell" customModule="ActionCell" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="154"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="153.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ol1-yf-jRA">
+                        <rect key="frame" x="8" y="8" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQT-lL-MTU">
+                        <rect key="frame" x="287" y="6" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="c1Z-Da-tqX"/>
+                            <constraint firstAttribute="width" constant="25" id="uLQ-wb-AQQ"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="icons8-delete_sign"/>
+                        <connections>
+                            <action selector="OnClickXoa:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Xeq-92-RR1"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UQT-lL-MTU" firstAttribute="centerY" secondItem="Ol1-yf-jRA" secondAttribute="centerY" id="9m5-8c-VdH"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Ol1-yf-jRA" secondAttribute="bottom" constant="8" id="Slh-vj-RSj"/>
+                    <constraint firstItem="Ol1-yf-jRA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Zcj-vg-hvr"/>
+                    <constraint firstAttribute="trailing" secondItem="UQT-lL-MTU" secondAttribute="trailing" constant="8" id="Zi2-b1-M7n"/>
+                    <constraint firstItem="Ol1-yf-jRA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="mnu-h8-XJ8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="buttonXoa" destination="UQT-lL-MTU" id="RbE-8x-SZH"/>
+                <outlet property="nameLabel" destination="Ol1-yf-jRA" id="k1Z-8S-Zvg"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icons8-delete_sign" width="25" height="25"/>
+    </resources>
+</document>
